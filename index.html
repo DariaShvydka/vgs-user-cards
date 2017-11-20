@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Very Good Security Test-Daria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!--Icons-->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16"> <!--for IE 6.0-->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>List of VGS employees</h1>
+    </div>
+</header>
+<div class="filters">
+    <div class="container">
+        <div class="filters__search">
+            <div class="form-group row">
+                <div class="col-12">
+                    <input class="form-control" type="search" placeholder="Name or email, e.g. Theresa…" id="filters__search-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="filters__group">
+            <div class="row">
+                <div class="col-12 col-sm-9">
+                    <div class="btn-group btn-group__occupation" role="group" aria-label="Оccupation">
+                        <button type="button" class="btn btn-secondary">Backend</button>
+                        <button type="button" class="btn btn-secondary">Frontend</button>
+                        <button type="button" class="btn btn-secondary">Devops</button>
+                        <button type="button" class="btn btn-secondary">Operations</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="hidden-sm-up">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="btn-group btn-group__location" role="group" aria-label="Location">
+                        <button type="button" class="btn btn-secondary">Lviv</button>
+                        <button type="button" class="btn btn-secondary">Kyiv</button>
+                        <button type="button" class="btn btn-secondary">San Francisco</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters__result">
+            <div class="row">
+                <div class="col-6">
+                    <p class="float-left">6 employees was found</p>
+                </div>
+
+                <div class="col-6">
+                    <button type="button" class="btn btn-success float-right"><i class="fa fa-plus" aria-hidden="true"></i>Add employee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/vera.png" alt="Vera" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Vera Mertens</h2>
+                <h3>Operations</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">Lviv</span>
+                    <span class="user__info-floor">2nd floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 align-self-md-center col-lg-3 pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">3:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 38 (032) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:vera-mertens@hotmail.com?Subject=Hello!" target="_top">vera-mertens@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/theresa.png" alt="Theresa" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Theresa Mason</h2>
+                <h3>Operations</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">Lviv</span>
+                    <span class="user__info-floor">2nd floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 align-self-md-center col-lg-3 pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">3:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 38 (032) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:vera-mertens@hotmail.com?Subject=Hello!" target="_top">theresa-mason@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/edward.png" alt="Edward" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Edward Chapman</h2>
+                <h3>Frontend</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">Lviv</span>
+                    <span class="user__info-floor">4th floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 col-lg-3 pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">3:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 align-self-md-center d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 38 (032) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:edward-chapman@hotmail.com?Subject=Hello!" target="_top">edward-chapman@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/samantha.png" alt="Samantha" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Samantha Kennedy</h2>
+                <h3>Frontend</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">Lviv</span>
+                    <span class="user__info-floor">4th floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 align-self-md-center col-lg-3 pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">3:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 38 (032) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:samantha-kennedy@hotmail.com?Subject=Hello!" target="_top">samantha-kennedy@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/maria.png" alt="Maria" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Maria Cardenas</h2>
+                <h3>Operations</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">San Francisco</span>
+                    <span class="user__info-floor">2nd floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 align-self-md-center col-lg-3 pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">4:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 1 (0922) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:maria_cardenas@hotmail.com?Subject=Hello!" target="_top">maria_cardenas@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row user">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 d-flex align-self-center justify-content-center">
+            <img src="images/charlotte.png" alt="Charlotte" class="user__avatar img-fluid float-right">
+        </div>
+
+        <div class="col-8 col-sm-5 col-md-3 col-lg-4">
+            <div class="user__info">
+                <h2>Charlotte Pelletier</h2>
+                <h3>Operations</h3>
+                <p class="mb-0"><span data-toggle="tooltip" data-placement="top" data-html="true" title="Brativ Rohatyntsiv St, 21<br>L'viv, 79000<br>Ukraine" class="user__info--city">San Francisco</span>
+                    <span class="user__info-floor">3rd floor</span></p>
+            </div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 col-lg-3 align-self-md-center pt-1">
+            <div class="user__local-time">
+                <p class="user__local-time-text">Local time</p>
+                <p class="user__local-time-number">4:42 PM</p>
+            </div>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-5 col-lg-3 d-flex align-self-center text-right justify-content-end">
+            <div class="user__contacts d-inline-block">
+                <p class="user__contacts-tel">+ 1 (0922) 497-1888</p>
+                <p class="user__contacts-email"><a href="mailto:charlotte-pelletier@hotmail.com?Subject=Hello!" target="_top">charlotte-pelletier@hotmail.com</a></p>
+            </div>
+
+            <div class="user-edit d-inline-block">
+                <button class="user-edit__btn">
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                    <span class="user-edit__btn-dot"></span>
+                </button>
+                <div class="user-edit__dropdown">
+                    <button class="user-edit__btn">
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                        <span class="user-edit__btn-dot"></span>
+                    </button>
+                    <ul class="user-edit__dropdown-list" tabindex="-1" role="menu" aria-labelledby="user-edit__btn" aria-hidden="true">
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Edit</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Move to...</button>
+                        </li>
+                        <li class="user-edit__dropdown-item" role="presentation">
+                            <button type="button" class="user-edit__dropdown-item-button" role="menuitem">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="init.js"></script>
+</body>
+</html>
